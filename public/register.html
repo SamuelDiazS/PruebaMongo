@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="csrf-token" content="" />
+    <title>EduPets - Registro</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="auth-page">
+    <main class="auth-card">
+      <h1>Crear cuenta</h1>
+      <form id="register-form" class="auth-form">
+        <label>
+          Nombre de usuario
+          <input type="text" name="username" placeholder="Ej. marta_kid" required />
+        </label>
+        <label>
+          Contraseña
+          <input type="password" name="password" placeholder="Mínimo 6 caracteres" required />
+        </label>
+        <label>
+          Nombre de tu mascota
+          <input type="text" name="petName" placeholder="Ej. Nube" required />
+        </label>
+        <button type="submit" class="button button--primary">Registrarme</button>
+      </form>
+      <p class="auth-link">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+      <p id="register-message" class="message" aria-live="polite"></p>
+    </main>
+
+    <script src="js/auth.js"></script>
+  </body>
+</html>

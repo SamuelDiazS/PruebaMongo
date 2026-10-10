@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="csrf-token" content="" />
+    <title>EduPets - Mi mascota</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="game-page">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Bienvenido/a</p>
+        <h1 id="player-name">Jugador</h1>
+      </div>
+      <button id="logout-button" class="button button--ghost" type="button">Cerrar sesión</button>
+    </header>
+
+    <main class="pet-layout">
+      <section class="pet-panel">
+        <div class="pet-card">
+          <div class="pet-card__header">
+            <div>
+              <p class="eyebrow">Mi mascota</p>
+              <h2 id="pet-name">Mascota</h2>
+            </div>
+            <div class="coin-badge">
+              <span>🪙</span>
+              <strong id="coins">100</strong>
+            </div>
+          </div>
+
+          <div class="pet-figure">
+            <img id="pet-image" src="assets/penguin.svg" alt="Mascota" />
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-box">
+              <span>Felicidad</span>
+              <strong id="happiness">80</strong>
+            </div>
+            <div class="stat-box">
+              <span>Hambre</span>
+              <strong id="hunger">20</strong>
+            </div>
+            <div class="stat-box">
+              <span>Energía</span>
+              <strong id="energy">100</strong>
+            </div>
+          </div>
+
+          <div class="action-buttons">
+            <button class="button button--primary" type="button" id="feed-button">🍎 Alimentar</button>
+            <button class="button button--secondary" type="button" id="play-button">🎾 Jugar</button>
+            <button class="button button--warning" type="button" id="rest-button">😴 Dormir</button>
+          </div>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <section class="panel">
+          <h3>🧮 Actividad matemática</h3>
+          <div id="math-question" class="math-box">Cargando ejercicio...</div>
+          <form id="math-form" class="math-form">
+            <input id="math-answer" type="number" min="0" step="1" placeholder="Tu respuesta" />
+            <button class="button button--primary" type="submit">Comprobar</button>
+          </form>
+          <p id="math-message" class="message" aria-live="polite"></p>
+        </section>
+
+        <section class="panel">
+          <h3>🛍️ Tienda</h3>
+          <div id="shop-items" class="shop-list"></div>
+        </section>
+
+        <section class="panel">
+          <h3>📜 Historial</h3>
+          <ul id="activity-history" class="history-list"></ul>
+        </section>
+      </aside>
+    </main>
+
+    <script src="js/pet.js"></script>
+  </body>
+</html>

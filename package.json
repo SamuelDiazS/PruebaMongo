@@ -1,0 +1,26 @@
+{
+  "name": "edupets",
+  "version": "1.0.0",
+  "description": "EduPets - A simple educational pet game for kids",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "edupets",
+    "express",
+    "mongodb",
+    "education",
+    "game"
+  ],
+  "author": "Copilot",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "mongodb": "^6.0.0"
+  }
+}
